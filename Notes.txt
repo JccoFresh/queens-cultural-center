@@ -1,0 +1,15 @@
+Type: 1 Scroll hybrid
+Navigation: Directs (scrolls?) your screen to the specific part of the site that the button says
+Font:
+
+
+
+Main page content:
+Carousel that you manual click to see new slide, has representationn of how many images there
+About us-text about company
+Services-Hovers over it then flips to show more content like a brief blurb. This will include all services.
+
+
+
+
+Donation page: Button is different, its appearance sticks out from the others and sends to a new page
