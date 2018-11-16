@@ -1,0 +1,132 @@
+
+ .flip-container {
+     perspective: 1000px;
+}
+/* flip the pane when hovered */
+ .flip-container:hover .flipper, .flip-container.hover .flipper {
+     transform: rotateY(180deg);
+}
+ .flip-container, .front, .back {
+     width: 320px;
+     height: 300px;
+}
+/* flip speed goes here */
+ .flipper {
+     transition: 1s;
+     transform-style: preserve-3d;
+     position: relative;
+}
+/* hide back of pane during swap */
+ .front, .back {
+     backface-visibility: hidden;
+     position: absolute;
+     top: 0;
+     left: 0;
+}
+/* front pane, placed above back */
+ .front {
+     z-index: 2;
+    /* for firefox 31 */
+     transform: rotateY(0deg);
+}
+/* back, initially hidden pane */
+ .back {
+     transform: rotateY(180deg);
+}
+
+/* Carousel */
+
+    /*wrapper*/
+.contain {
+    text-align: center;
+    display: none;
+}
+    /*images*/
+.box {
+    width: 40em;
+    display: inline-block;
+    margin: 2em;
+    
+}
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -15px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Caption text */
+.text {
+  color: #000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  margin-top: -2em;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation not working
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+*/
+.footer p:hover{
+    color:red;
+    
+}
+

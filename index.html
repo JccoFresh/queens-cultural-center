@@ -17,17 +17,18 @@
 <body>
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <a href="" class="navbar-brand">Test Word</a>
+        <a href="" class="navbar-brand">Queens Cultural Center</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
         <!-- What are we putting here?-->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="navitem"><a href="" class="nav-link">Test</a></li>
-                <li class="navitem"><a href="" class="nav-link">Test</a></li>
-                <li class="navitem"><a href="" class="nav-link">Test</a></li>
-                <li class="navitem"><a href="" class="nav-link">Test</a></li>
+                <li class="navitem"><a href="" class="nav-link">Home</a></li>
+                <li class="navitem"><a href="" class="nav-link">About Us</a></li>
+                <li class="navitem"><a href="" class="nav-link">Services</a></li>
+                <li class="navitem"><a href="" class="nav-link"><button class="btn btn-success">Donate</button></a></li>
+
             </ul>
         </div>
     </nav>
@@ -35,65 +36,42 @@
     <br><br><br>
     <!--Carousel-->
 
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Images and caption text -->
+        <div class="contain">
+            <img class="responsive box" src="https://i.postimg.cc/tgRzXk48/md-duran-628447-unsplash.jpg">
+            <div class="text">Connect</div>
+        </div>
+
+        <div class="contain">
+            <img class="responsive box" src="https://i.postimg.cc/KcCQnt0g/joseph-grazone-730742-unsplash.jpg">
+            <div class="text">Culture</div>
+        </div>
+
+        <div class="contain">
+            <img class="responsive box" src="https://i.postimg.cc/HLLQGLSg/nicole-honeywill-703542-unsplash.jpg">
+            <div class="text">Literature</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
     <!--About Us-->
 
 
     <!--Services-->
-    <!---Temporary Css for Card-->
-    <style type="text/css">
-        .flip-container {
-            perspective: 1000px;
-        }
 
-        /* flip the pane when hovered */
-
-        .flip-container:hover .flipper,
-        .flip-container.hover .flipper {
-            transform: rotateY(180deg);
-        }
-
-        .flip-container,
-        .front,
-        .back {
-            width: 320px;
-            height: 300px;
-        }
-
-        /* flip speed goes here */
-
-        .flipper {
-            transition: 0.6s;
-            transform-style: preserve-3d;
-
-            position: relative;
-        }
-
-        /* hide back of pane during swap */
-
-        .front,
-        .back {
-            backface-visibility: hidden;
-
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        /* front pane, placed above back */
-
-        .front {
-            z-index: 2;
-            /* for firefox 31 */
-            transform: rotateY(0deg);
-        }
-
-        /* back, initially hidden pane */
-
-        .back {
-            transform: rotateY(180deg);
-        }
-    </style>
     <div class="services" id="services">
         <div class="container">
             <h2>Services</h2>
@@ -101,11 +79,16 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
-                            <div class="front"></div>
+                            <div class="front" heigh>
+                                <!--Front Content-->
+                                <h3>Exhibits</h3>
+                                <p></p>
+                            </div>
                             <div class="back">
                                 <!-- back content -->
                                 <h3>Test</h3>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor pretium diam, sit amet elementum nisi lorem ut tellus. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor
+                                pretium diam, sit amet elementum nisi lorem ut tellus.
                                 <br>
                                 <button class="btn btn-success">Sign Up</button>
                             </div>
@@ -117,13 +100,13 @@
                         <div class="flipper">
                             <div class="front">
                                 <!--Front Content-->
-                                <h3>Test</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor pretium diam, sit amet elementum nisi lorem ut tellus. </p>
+                                <h3>Lectures</h3>
                             </div>
                             <div class="back">
                                 <!-- back content -->
                                 <h3>Test</h3>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor pretium diam, sit amet elementum nisi lorem ut tellus. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor
+                                pretium diam, sit amet elementum nisi lorem ut tellus.
                                 <br>
                                 <button class="btn btn-success">Sign Up</button>
                             </div>
@@ -137,13 +120,13 @@
                         <div class="flipper">
                             <div class="front">
                                 <!--Front Content-->
-                                <h3>Test</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor pretium diam, sit amet elementum nisi lorem ut tellus. </p>
+                                <h3>Tours</h3>
                             </div>
                             <div class="back">
                                 <!-- back content -->
                                 <h3>Test</h3>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor pretium diam, sit amet elementum nisi lorem ut tellus. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor
+                                pretium diam, sit amet elementum nisi lorem ut tellus.
                                 <br>
                                 <button class="btn btn-success">Sign Up</button>
                             </div>
@@ -155,13 +138,13 @@
                         <div class="flipper">
                             <div class="front">
                                 <!--Front Content-->
-                                <h3>Test</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor pretium diam, sit amet elementum nisi lorem ut tellus. </p>
+                                <h3>Esducational Programs</h3>
                             </div>
                             <div class="back">
                                 <!-- back content -->
                                 <h3>Test</h3>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor pretium diam, sit amet elementum nisi lorem ut tellus. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna erat, egestas vel sollicitudin non, aliquam in purus. Pellentesque nec justo gravida magna iaculis rutrum tincidunt nec est. Vivamus tincidunt, nibh vitae vehicula porta, mauris dolor
+                                pretium diam, sit amet elementum nisi lorem ut tellus.
                                 <br>
                                 <button class="btn btn-success">Sign Up</button>
                             </div>
@@ -173,6 +156,41 @@
     </div>
 
     <!--Contact Us/Footer-->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <h4>Contact </h4>
+                    <p><i class="fa fa-home"></i>Queens Cultural Center</p>
+                    <p><i class="fa fa-home"></i>Po Box 310</p>
+                    <p><i class="fa fa-home"></i>Queens, NY, 12430</p>
+                    <p><i class="fa fa-envelope"></i> QCC@gmail.com</p>
+                    <p><i class="fa fa-phone"></i> (523)-234-2546</p>
+                    <p>Contact Us</p>
+
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>About Us</h4>
+                    <p>About Us</p>
+                    <p>Privacy</p>
+                    <p>Terms and Conditions</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>Connect</h4>
+                    <p>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </p>
+                    <p><b>Subscribe below to join our newsletter and stay updated on exciting events!</b></p>
+                    <input type="text" class="form-control" placeholder="Email Adress" aria-label="" aria=describeby="basic-addon1">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Subcribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
