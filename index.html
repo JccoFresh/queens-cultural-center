@@ -18,10 +18,10 @@
 <body>
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">Queens Cultural Center</a>
+        <a href="index.html" class="navbar-brand">Queens Cultural Center</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+            <span class="navbar-toggler-icon"></span>
+          </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
@@ -40,20 +40,20 @@
 
         <!-- Images and caption text -->
         <br> <br> <br>
-            <h2>Community Education Advocacy Center</h2>
-  <div class="mySlides">
-     <img class="responsive" src="https://i.postimg.cc/tgRzXk48/md-duran-628447-unsplash.jpg" style="width:100%">
-    <div class="text">Connect</div>
-  </div>
-   <div class="mySlides">
+        <h2>Community Education Advocacy Center</h2>
+        <div class="mySlides">
+            <img class="responsive" src="https://i.postimg.cc/tgRzXk48/md-duran-628447-unsplash.jpg" style="width:100%">
+            <div class="text">Connect</div>
+        </div>
+        <div class="mySlides">
             <img class="responsive" src="https://i.postimg.cc/KcCQnt0g/joseph-grazone-730742-unsplash.jpg" style="width:100%">
             <div class="text">Culture</div>
         </div>
 
-  <div class="mySlides">
-    <img class="responsive" src="https://i.postimg.cc/HLLQGLSg/nicole-honeywill-703542-unsplash.jpg" style="width:100%">
-    <div class="text">Literature</div>
-  </div>
+        <div class="mySlides">
+            <img class="responsive" src="https://i.postimg.cc/HLLQGLSg/nicole-honeywill-703542-unsplash.jpg" style="width:100%">
+            <div class="text">Literature</div>
+        </div>
 
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -84,43 +84,72 @@
         <div class="container">
             <h2>Services</h2>
             <div class="row">
-                
+                <div class="col-lg-2 col-md-1"></div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                               <h2>Exhibits</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <hr>
+                                <p>Come check out our exhibits showcasing art from local artists and learn about the history of Queens.</p>
+                                <a class="btn btn-success" href="exhibits.html">Learn More</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                               <h2>Lectures</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <hr>
+                                <p>Come and listen to lectures from our hired speakers about a wide range of topics such as politics, religion, etc.</p>
+                                <a class="btn btn-success">Learn More</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-1"></div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                            <div class="front">
-                                <!--Front Content-->
-                                <h3>Tours</h3>
+                <div class="col-lg-2 col-md-1"></div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                               <h2>Tours</h2>
                             </div>
-                            <div class="back">
-                                <!-- back content -->
-                                <h3>Test</h3>
-                                <p>Come take a tour of our building. Immerse yourself in the history of this center.</p>
-                                <br>
-                                <button class="btn btn-success">Learn More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                            <div class="front">
-                                <!--Front Content-->
-                                <h3>Educational Programs</h3>
-                            </div>
-                            <div class="back">
-                                <!-- back content -->
-                                <br><br>
-                                <p>Bring your children to learn about the various cultures in queens. We have workshops </p>
-                                <br>
-                                <button class="btn btn-success">Learn More</button>
+                            <div class="flip-card-back">
+                                <hr>
+                                <p>Come and tour our facilities with our tour guides as they teach you the history behind QCC.</p>
+                                <a class="btn btn-success">Learn More</a>
+                                <hr>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                               <h2>Educational Programs</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <hr>
+                                <p>Come bring you children to our educational workshops that teach them the vast cultures of Que</p>
+                                <a class="btn btn-success">Learn More</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-1"></div>
             </div>
         </div>
     </div>
@@ -130,12 +159,12 @@
         <div class="container">
             <h2>Meet Our Team</h2>
             <div class="row">
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-3 col-md-3">
                     <img src="https://i.imgur.com/4eFX83o.png" class="rounded-circle" height="180px" width="180px"></img>
                     <h3>Jackie</h3>
                     <h4>Founder</h4>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-3 col-md-3">
                     <img src="https://i.imgur.com/05pJTkP.png" class="rounded-circle" height="180px" width="180px"></img>
                     <div class="col-lg-8 col-md-8">
                         <h3>William</h3>
@@ -143,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-3 col-md-3">
                     <img src="https://i.imgur.com/6yHP27v.png" class="rounded-circle" height="180px" width="180px"></img>
 
                     <div class="col-lg-8 col-md-8">
@@ -152,7 +181,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg col-md-4">
+                <div class="col-lg-3 col-md-3">
                     <img src="https://i.imgur.com/tQSWbeO.png" class="rounded-circle" height="180px" width="180px"></img>
 
                     <div class="col-lg-8 col-md-8">
