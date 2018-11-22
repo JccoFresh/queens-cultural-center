@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <!-- Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700,900|Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet">
     <!--External Link-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <title> </title>
@@ -18,7 +19,7 @@
 <body>
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a href="index.html" class="navbar-brand">Queens Cultural Center</a>
+        <a href="#" class="navbar-brand">Queens Cultural Center</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,39 +36,29 @@
     </nav>
 
     <!--Carousel-->
-    <!-- Slideshow container -->
-    <div class="slideshow-container" id="home">
-
-        <!-- Images and caption text -->
-        <br> <br> <br>
-        <h2>Community Education Advocacy Center</h2>
-        <div class="mySlides">
-            <img class="responsive" src="https://i.postimg.cc/tgRzXk48/md-duran-628447-unsplash.jpg" style="width:100%">
-            <div class="text">Connect</div>
+    
+    <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="slider">
+            <div class="slide slide1">
+                <div class="slide-content">
+                    <span>Culture</span>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide-content">
+                    <span>Community</span>
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide-content">
+                    <span>Creativity</span>
+                </div>
+            </div>
         </div>
-        <div class="mySlides">
-            <img class="responsive" src="https://i.postimg.cc/KcCQnt0g/joseph-grazone-730742-unsplash.jpg" style="width:100%">
-            <div class="text">Culture</div>
-        </div>
-
-        <div class="mySlides">
-            <img class="responsive" src="https://i.postimg.cc/HLLQGLSg/nicole-honeywill-703542-unsplash.jpg" style="width:100%">
-            <div class="text">Literature</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div id="arrow-right" class="arrow"></div>
     </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
+    
     <!--About Us-->
     <div class="about" id="about">
         <div class="container">
@@ -89,7 +80,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                               <h2>Exhibits</h2>
+                                <h2>Exhibits</h2>
                             </div>
                             <div class="flip-card-back">
                                 <hr>
@@ -104,7 +95,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                               <h2>Lectures</h2>
+                                <h2>Lectures</h2>
                             </div>
                             <div class="flip-card-back">
                                 <hr>
@@ -123,7 +114,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                               <h2>Tours</h2>
+                                <h2>Tours</h2>
                             </div>
                             <div class="flip-card-back">
                                 <hr>
@@ -138,7 +129,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                               <h2>Educational Programs</h2>
+                                <h2>Educational Programs</h2>
                             </div>
                             <div class="flip-card-back">
                                 <hr>

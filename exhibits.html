@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700,900|Nunito" rel="stylesheet">
     <!--External Link-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Noto Sans-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
 </head>
 
 <body>
@@ -34,40 +38,99 @@
     </nav>
     <br><br><br><br>
     <!---Exhibits List--->
-    <h3>Exhibits</h3>
+    <h2>Exhibits</h2>
     <div class="exhibits" id="exhibits">
         <div class="container">
             <hr>
             <div id="exhibit-item" class="row">
-                <div class="col-lg-2 col-md-3">
-                    <img src="" alt="">
+                <div class="col-lg-3 col-md-2">
+                    <img src="data:image/jpeg;base64,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" alt="">
                 </div>
-                <div class="col-lg-8 col-md-7">
+                <div class="col-lg-9 col-md-10">
                     <h4><strong>Veni Vidi Vici Exhibit</strong></h4>
                     <p>The "Veni Vidi Vici" exhibit is meant to showcase the influence Queens culture has had on New York City. </p>
-                </div>
-                <div class="col-lg-2 col-md-2">
-                    <a href="" class="btn btn-success"></a>
                 </div>
             </div>
             <hr>
             <div id="exhibit-item" class="row">
-                <div class="col-lg-2 col-md-3">
-                    <img src="" alt="">
+                <div class="col-lg-3 col-md-3">
+                    <img src="https://fineartamerica.com/images/grouplogos/logo2-jewish-art.jpg"></img>
                 </div>
-                <div class="col-lg-8 col-md-7">
-                    <h4><strong>Veni Vidi Vici Exhibit</strong></h4>
-                    <p>The "Veni Vidi Vici" exhibit is meant to showcase the influence Queens culture has had on New York City. </p>
-                </div>
-                <div class="col-lg-2 col-md-2">
-                    <a href="" class="btn btn-success"></a>
+                <div class="col-lg-9 col-md-9">
+                    <h4><strong>Jewish Exhibit</strong></h4>
+                    <p>Learn about the history of the Queens Jewish Community; from its origin to the impact it's culture has on Queens. </p>
                 </div>
             </div>
             <hr>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div id="exhibit-item" class="row">
+                <div class="col-lg-3 col-md-3">
+                    <img src="https://i.pinimg.com/originals/4d/b3/82/4db3829d3b23e706d8b33882c1aed11d.jpg" alt="">
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <h4><strong>Hispanic Art Exhibit</strong></h4>
+                    <p>The Hispanic Art Exhibit showcases historical art from our Hispanic community. It showcases the morals of the artists and the suffering of the people.</p>
+                </div>
+            </div>
+            <hr>
+            <div id="exhibit-item" class="row">
+                <div class="col-lg-3 col-md-3">
+                    <img src="" alt="">
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <h4><strong></strong></h4>
+                    <p>Learn about the history of Queens</p>
+                </div>
+            </div>
+            <hr>
+            <div id="exhibit-item" class="row">
+                <div class="col-lg-3 col-md-3">
+                    <img src="queens-map-cvr-1.jpg" alt="">
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <h4><strong>African American Musicians </strong></h4>
+                    <p>Learn about African American Msuicians that were born in Queens. Learn about the triumphs and the impact they had on the music world.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="footer footer-dark bg-dark" id="footer" footer-dark bg-dark>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <h4>Resources</h4>
+                    <p>About Us</p>
+                    <p>Privacy</p>
+                    <p>Terms and Conditions</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>Connect</h4>
+                    <p>
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h4>Contact</h4>
+                    <i class="fa fa-map"></i>
+                    <p>
+                        Queens Cultural Center
+                        <br> Po Box 310</br>
+                        Queens, NY, 12430
+                    </p>
+                    <p><i class="fa fa-envelope"></i> QCC@gmail.com</p>
+                    <p><i class="fa fa-phone"></i> (523)-234-2546</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <p><b>Subscribe to our newsletter to stay updated on exciting events!</b></p>
+                    <input type="text" class="form-control" placeholder="Email Adress" aria-label="" area-describedby="basic-addon1">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
