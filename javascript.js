@@ -47,3 +47,4 @@ arrowRight.addEventListener("click", function() {
 });
 
 startSlide();
+
