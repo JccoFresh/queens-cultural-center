@@ -317,4 +317,14 @@ strong {
 }
 #lectures .col-lg-4{
   border:2px solid;
+  margin-right: 10px;
+  margin-bottom: 10px
 }
+/*Modal*/
+#myModal{
+  color:black;
+}
+#myModal p{
+  color:black;
+}
+
