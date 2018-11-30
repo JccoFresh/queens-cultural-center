@@ -315,10 +315,10 @@ strong {
 #lectures{
   text-align:center;
 }
-#lectures .col-lg-4{
+#lectureItem{
   border:2px solid;
-  margin-right: 10px;
-  margin-bottom: 10px
+  margin-right: 4px;
+  margin-bottom: 10px;
 }
 /*Modal*/
 #myModal{

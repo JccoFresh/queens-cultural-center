@@ -41,7 +41,8 @@
         <div class="container">
             <h2>Lectures</h2>
             <div class="row">
-                <div class="col-lg-4 col-md-4 wow flipInX" data-wow-delay:2.5s>
+                <div class="col-lg-1 col-md-2"></div>
+                <div id="lectureItem" class="col-lg-3 col-md-4 wow flipInX" data-wow-delay:2.5s>
                     <h4>Political</h4>
                     <img src="https://images.cdn1.stockunlimited.net/clipart/man-giving-speech_1518423.jpg" alt="Picture of mofo talking"></img>
                     <hr>
@@ -51,32 +52,91 @@
                     <p>Thursday-12:00PM-1:00PM </p>
                     <p>Friday-12:00PM-1:00PM</p>
                 </div>
-                <div class="col-lg-4 col-md-4 wow flipInX" data-wow-delay:2.5s>
+                <div id="lectureItem" class="col-lg-3 col-md-4 wow flipInX" data-wow-delay:2.5s>
                     <h4>Religion</h4>
                     <img src="https://images.cdn4.stockunlimited.net/clipart/monk_1319758.jpg">
                     <hr>
                     <p>Monday-11AM-12PM</p>
                     <p>Tuesday-N/A</p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                    <p>Wednesday-11AM-12PM</p>
+                    <p>Thursday-11AM-12PM</p>
+                    <p>Friday-11AM-12PM</p>
+                </div>
+                <div id="lectureItem" class="col-lg-3 col-md-4 wow flipInX" data-wow-delay:2.5s></div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer footer-dark bg-dark" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <h4>Resources</h4>
+                    <p>About Us</p>
+                    <p>Our team</p>
+                    <p>News</p>
+                    <p>Impact</p>
+                    <p>Partnerships</p>
+                    <p><a href="donate.html">Give a Gift</a></p>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    <p>Terms and Conditions</p>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>Connect</h4>
+                    <p>
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h4>Contact</h4>
+                    <i class="fa fa-map"></i>
+                    <p>
+                        Queens Cultural Center
+                        <br> Po Box 310</br>
+                        Queens, NY, 12430
+                    </p>
+                    <p><i class="fa fa-envelope"></i> QCC@gmail.com</p>
+                    <p><i class="fa fa-phone"></i> (523)-234-2546</p>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <h4>Sociey</h4>
+                    <p>Subscribe to our newsletter to stay updated on exciting events!</p>
+                    <input id="Email" type="text" class="form-control" placeholder="Email Address" aria-label="" area-describedby="basic-addon1">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal" onClick="clearText();">Subscribe</button>
+                    </div>
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Notification</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Thank you for subscribing!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-           </div>
+            </div>
         </div>
+    </div>
 
 
 
-
-        <!--WOW.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-        <script>
-            new WOW().init();
-        </script>
+    <!--WOW.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript">
+        function clearText() {
+            document.getElementById("Email").value = "";
+        }
+    </script>
 </body>
 
 </html>
