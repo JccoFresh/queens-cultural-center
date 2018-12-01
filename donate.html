@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body class="backgroundColour">
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <a href="index.html" class="navbar-brand">Queens Cultural Center</a>
@@ -34,10 +34,11 @@
     </nav>
 
     <!--Input Box-->
-    <div id="header" class="container">
-        <img src="http://hildalsolis.org/wp-content/uploads/2017/12/library1.jpg"></img>
+    <div id="containbox" class="container">
+        <!--<img style="display: block; margin-left:auto;margin-right: auto; margin-top: 5em; width: 70%;" src="http://hildalsolis.org/wp-content/uploads/2017/12/library1.jpg"></img>-->
+        <img id="backgroundimage" src="http://hildalsolis.org/wp-content/uploads/2017/12/library1.jpg" border="0" alt="">
     </div>
-    <div class="row-lg-12 row-md-12">
+    <div class="container" id="containbox">
         <h3 class="text-center">Enter your information </h3>
         <div class="container" id="donate">
             <div class="container">
@@ -65,14 +66,14 @@
                 </div>
             </div>
             <b><h3 class="text-center">Select an amount to give</h3></b>
-            <div class="row justify-contact-center">
+            <div class="row justify-content-center">
                 <div class="row-lg-12 row-md-6">
                     <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$25</button>
                     <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$50</button>
                     <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$100</button>
                 </div>
             </div>
-            <div class="row justify-contact-center">
+            <div class="row justify-content-center">
                 <div class="row-lg-12 row-md-6">
                     <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$250</button>
                     <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$500</button>
@@ -81,7 +82,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" id="containbox">
         <span class="small-12 cell" style="padding-bottom: 14px; padding-left: 15px; margin-top: 10px; font-size: 16px; display: block; line-height: 16px;">Can you give your gift monthly?</span>
         <ul class="buttons grid-x small-12">
             <li class="small-6 cell">
@@ -92,15 +93,84 @@
             </li>
         </ul>
     </div>
-    <div class="container">
+    <div class="container" id="containbox">
         <div class="row-lg-12 row-md-6">
             <input type="text" class="form-control" placeholder="$" aria-label="" aria-describeby="basic-addon1">
             <div class="input-group-append">
-                <button class="btn btn-primary" type="button">Donate</button>
+                <a href="index.html" class="btn btn-primary">Donate</a>
             </div>
+        </div>
+        <div class="BBFormSection BBDFormSectionComments">
+            <fieldset>
+                <legend></legend>
+                <div id="bboxdonation_comment_fldComments" class="BBFormFieldContainer">
+                    <label for="bboxdonation_comment_txtComments" id="bboxdonation_comment_lblComments" class="BBFormFieldLabel BBFormFieldLabelEdit">Leave a comment (optional):</label>
+                    <textarea name="bboxdonation$comment$txtComments" id="bboxdonation_comment_txtComments" class="BBFormTextArea" rows="2" cols="30" maxlength="255" placeholder="optional"></textarea>
+                </div>
+            </fieldset>
         </div>
     </div>
 
+
+    <!--Footer-->
+    <div class="footer footer-dark bg-dark" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <h4>Resources</h4>
+                    <p>About Us</p>
+                    <p>Our team</p>
+                    <p>News</p>
+                    <p>Impact</p>
+                    <p>Partnerships</p>
+                    <p><a href="donate.html">Give a Gift</a></p>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    <p>Terms and Conditions</p>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>Connect</h4>
+                    <p>
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h4>Contact</h4>
+                    <i class="fa fa-map"></i>
+                    <p>
+                        Queens Cultural Center
+                        <br> Po Box 310</br>
+                        Queens, NY, 12430
+                    </p>
+                    <p><i class="fa fa-envelope"></i> QCC@gmail.com</p>
+                    <p><i class="fa fa-phone"></i> (523)-234-2546</p>
+                </div>
+                <div class="boxed col-lg-4 col-md-4"><br>
+                    <p>Subscribe to our newsletter to stay updated on exciting events!</p>
+                    <input id="First Name" type="text" class="form-control" placeholder="First Name" aria-label="" area-describedby="basic-addon1"><br>
+                    <input id="phone num" type="text" class="form-control" placeholder="Phone Number" aria-label="" area-describedby="basic-addon1"><br>
+                    <input id="Email" type="text" class="form-control" placeholder="Email Address" aria-label="" area-describedby="basic-addon1"><br>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal" onClick="clearText();">Submit</button>
+                    </div>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Notification</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Thank you for subscribing!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

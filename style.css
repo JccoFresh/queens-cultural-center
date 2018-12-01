@@ -7,6 +7,9 @@ h2 {
   margin: 1em;
   font-family: "Merriweather Sans", sans-serif;
 }
+a:hover {
+  text-decoration: none;
+}
 
 nav {
   font-family: "Merriweather Sans", sans-serif;
@@ -141,11 +144,6 @@ body,
   2px -1px 0 #fff,
   -2px 1px 0 #fff,
   2px 1px 0 #fff;
-  /* background-color: #cfc ;
-  padding: 0.5%;
-  border: 1px solid green ;
-  opacity: 0.9;
-  */
 }
 
 .arrow {
@@ -193,6 +191,9 @@ body,
 
 .partners h2 {
   font-family: 'Merriweather Sans', cursive;
+  color: #fff;
+  background-color: #914a2b;
+  text-align: center !important;
 }
 
 
@@ -228,10 +229,15 @@ strong {
 }
 
 /*Contact Us*/
+.backgroundColour {
+  background: #1D976C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
 .form {
-  width: 340px;
-  height: 440px;
+  width: 600px;
+  height: 750px;
   background: #e6e6e6;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
@@ -239,12 +245,14 @@ strong {
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
-  font-family: 'Merriweather Sans',
-  sans-serif;
+  font-family: 'Exo 2', bold, sans-serif;
   position: relative
 }
+#footer .boxed {
+  border: 1px solid red;
+}
 
-#contactus h2 {
+ h2 #contactus {
   margin: 10px 0;
   padding-bottom: 10px;
   width: 180px;
@@ -266,7 +274,7 @@ strong {
 }
 
 #contactus input:focus {
-  border-bottom: 2px solid #78788c
+  border-bottom: 2px solid #78788c;
 }
 
 #contactus p:before {
@@ -274,24 +282,24 @@ strong {
   display: block;
   margin: 28px 0 0;
   font-size: 14px;
-  color: #5a5a5a
+  color: #5a5a5a;
 }
 
-#contactus button {
+.message {
   float: right;
   padding: 8px 12px;
   margin: 8px 0 0;
   font-family: 'Merriweather Sans', sans-serif;
   border: 2px solid #78788c;
   background: #e6e6e6;
-  color: #5a5a6e;
-  cursor: pointer;
-  transition: all .3s
+  color: #000;
+  transition: all .3s;
 }
 
-#contactus button:hover {
+#contactus .message:hover {
   background: #78788c;
-  color: #fff
+  color: #e6e6e6;
+  border: 2px solid #78788c;
 }
 
 #contactus div {
@@ -305,11 +313,11 @@ strong {
   padding: 16px 4px 16px 0;
   border-radius: 6px;
   font-size: 13px;
-  box-shadow: 10px 10px 40px -14px #000
+  box-shadow: 10px 10px 40px -14px #000;
 }
 
 #contactus span {
-  margin: 0 5px 0 15px
+  margin: 0 5px 0 15px;
 }
 /*Lectures*/
 #lectures{
@@ -326,5 +334,23 @@ strong {
 }
 #myModal p{
   color:black;
+}
+ #containbox{
+  border: 2px solid blue;
+}
+.header {
+  border: 1px red;
+}
+#backgroundimage{
+   height: auto;
+   left: 0;
+   margin: 0;
+   min-height: 100%;
+   min-width: 674px;
+   padding: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: -1;
 }
 
