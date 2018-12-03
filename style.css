@@ -24,12 +24,19 @@ body {
 }
 
 /*About Us*/
-
+.about h2{
+background-color: #DF2740;
+color:#fff;
+}
 .about {
   margin-bottom: 2em;
   text-align: center;
 }
 
+.about p{
+  font-size: 25px;
+  font-family: 'Merriweather', serif;
+}
 
 /*Services*/
 
@@ -49,6 +56,10 @@ body {
   margin-bottom: 20px;
 }
 
+#serviceHeader{
+  background-color:#23788A;
+  color:#fff;
+}
 /* This container is needed to position the front and back side */
 
 .flip-card-inner {
@@ -76,6 +87,7 @@ body {
   height: 200px;
   backface-visibility: hidden;
   border: 2px solid;
+  
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -91,6 +103,7 @@ body {
   background-color: #fff;
   transform: rotateY(180deg);
 }
+
 
 /* Carousel */
 
@@ -170,6 +183,51 @@ body,
   margin-right: 30px;
 }
 
+/*team*/
+#member{
+    width:300px;
+    height:300px;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+}
+
+#member img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+}
+
+#member:hover img{
+    filter:blur(2px);
+    box-shadow:0 0 16px cyan;
+}
+
+#member :not(img){
+    position:absolute;
+    z-index:1;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#CD3413;
+    opacity:0;
+    transition:.3s;
+}
+
+#member:hover :not(img){
+    opacity:1;
+}
+
+#member h3{
+    right:10px;
+}
+#member h4{
+    top:50px;
+    right:10px;
+}
+
+
 
 /*Footer*/
 
@@ -177,16 +235,22 @@ body,
   color: white;
 }
 
+.footer a{
+  color:#fff;
+}
 .footer {
   color: white;
   text-align: left;
 }
+#footer .boxed {
+  border: 1px solid red;
+}
+
 
 /* Partners */
 
-.partner {
-  width: 25em;
-  height: 8em;
+.partners {
+  background-color: green;
 }
 
 .partners h2 {
@@ -196,7 +260,14 @@ body,
   text-align: center !important;
 }
 
-
+.partners img{
+  width: 250px;
+  height: 250px;
+  opacity: 0.6;
+  cursor: pointer;
+  margin: 10px ;
+  transition: all 500ms ease-in-out;
+}
 
 .partners {
   margin-top: 7em;
@@ -204,9 +275,13 @@ body,
 
 }
 
-.partners .col-md-4 {
-  margin-right: 40px;
+.partners img:hover{
+  opacity: 1.0;
 }
+
+
+
+
 
 /*Exhibits*/
 
@@ -236,8 +311,8 @@ strong {
 
 }
 .form {
-  width: 600px;
-  height: 750px;
+  width: 750px;
+  height: 850px;
   background: #e6e6e6;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
@@ -247,9 +322,6 @@ strong {
   box-sizing: border-box;
   font-family: 'Exo 2', bold, sans-serif;
   position: relative
-}
-#footer .boxed {
-  border: 1px solid red;
 }
 
  h2 #contactus {
@@ -335,12 +407,7 @@ strong {
 #myModal p{
   color:black;
 }
- #containbox{
-  border: 2px solid blue;
-}
-.header {
-  border: 1px red;
-}
+/*Donate*/
 #backgroundimage{
    height: auto;
    left: 0;
@@ -354,3 +421,86 @@ strong {
    z-index: -1;
 }
 
+/*Donate
+.form {
+  width: 600px;
+  height: 750px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: 'Exo 2', bold, sans-serif;
+  position: relative
+}
+
+ h2 #containbox {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c
+}
+
+#containbox input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+  transition: all .3s;
+  border-bottom: 2px solid #bebed2
+}
+
+#containbox input:focus {
+  border-bottom: 2px solid #78788c;
+}
+
+#containbox p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.message {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: 'Merriweather Sans', sans-serif;
+  border: 2px solid #78788c;
+  background: #e6e6e6;
+  color: #000;
+  transition: all .3s;
+}
+
+#containbox .message:hover {
+  background: #78788c;
+  color: #e6e6e6;
+  border: 2px solid #78788c;
+}
+
+#containbox div {
+  content: 'Hi';
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+
+#containbox span {
+  margin: 0 5px 0 15px;
+}
+*/

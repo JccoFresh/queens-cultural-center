@@ -31,6 +31,7 @@
                 <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="#team" class="nav-link">Our Team</a></li>
                 <li class="nav-item"><a href="#partners" class="nav-link">Partners</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <a href="donate.html" class="nav-link"><button class="btn btn-success">Donate</button></a>
         </div>
@@ -114,16 +115,38 @@
                     <p><i class="fa fa-envelope"></i> QCC@gmail.com</p>
                     <p><i class="fa fa-phone"></i> (523)-234-2546</p>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <p><b>Subscribe to our newsletter to stay updated on exciting events!</b></p>
-                    <input type="text" class="form-control" placeholder="Email Adress" aria-label="" area-describedby="basic-addon1">
+                <div class="boxed col-lg-4 col-md-4"><br>
+                    <p>Subscribe to our newsletter to stay updated on exciting events!</p>
+                    <input id="FirstName" type="text" class="form-control" placeholder="First Name" aria-label="" area-describedby="basic-addon1"><br>
+                    <input id="phonenum" type="text" class="form-control" placeholder="Phone Number" aria-label="" area-describedby="basic-addon1"><br>
+                    <input id="Email" type="text" class="form-control" placeholder="Email Address" aria-label="" area-describedby="basic-addon1"><br>
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
+                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal" onClick="clearText();">Submit</button>
+                    </div>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Notification</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Thank you for subscribing!</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        function clearText() {
+            document.getElementById("Email").value = "";
+            document.getElementById("FirstName").value = "";
+            document.getElementById("phonenum").value = "";
+        }
+    </script>
 </body>
 
 </html>
