@@ -35,3 +35,9 @@ width: 340px;
 
 
 https://www.qchnyc.org/advocacy
+
+Presnsentation:
+
+how did we as a team decide some features in addition to what the client wanted
+more of why and not what is not there
+why did you design it the way you did

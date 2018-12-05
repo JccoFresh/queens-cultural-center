@@ -21,6 +21,8 @@
 
         function load() { if (window.location.hash) shiftWindow(); }
     </script>
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" type="text/css" />
 </head>
 
 <body onload="load()">
@@ -88,7 +90,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div id="exhibits-front" class="flip-card-front" style="background-image:url(https://bit.ly/2EcDi4p)">
-                                <h2>Exhibits</h2>
+                                <h2 class="shadow">Exhibits</h2>
                             </div>
                             <div class="flip-card-back">
                                 <hr>
@@ -103,7 +105,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front" style="background-image:url(https://bit.ly/2Rv7ryJ)">
-                                <h2>Lectures</h2>
+                                <h2 class="shadow">Lectures</h2>
                             </div>
                             <div class="flip-card-back">
                                 <hr>
@@ -122,7 +124,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front" style="background-image:url(https://bit.ly/2KQr7L1)">
-                                <h2>Tours</h2>
+                                <h2 class="shadow">Tours</h2>
                             </div>
                             <div class="flip-card-back">
                                 <hr>
@@ -137,7 +139,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front" style="background-image:url(https://bit.ly/2E2hXKb)">
-                                <h2>Educational Programs</h2>
+                                <h2 class="shadow">Educational Programs</h2>
                             </div>
                             <div class="flip-card-back">
                                 <hr>
@@ -152,44 +154,49 @@
             </div>
         </div>
     </div>
-    https://i.imgur.com/05pJTkP.png http://editorsdesk.net/wp-content/uploads/2016/10/bigstock-Young-pretty-business-woman-wi-34210634-min-1-180x180.jpg
+
     <!--Meet Our Team-->
     <div class="team" id="team">
         <div class="container">
-            <h2>Meet Our Team</h2>
+            <div id="teamHeader">
+                <h2>Meet Our Team</h2>
+            </div>
             <div class="row">
-
-                    <div id="member" class="col-lg-3 col-md-3">
-                        <img src=" https://i.imgur.com/4eFX83o.png"></img>
-                        <div class="overlay">
-                            <h3>Jackie</h3>
-                            <h4>The Other Plain Jane</h4>
-                        </div>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"><a href=""></a></i>
+                <div id="member" class="col-lg-3 col-md-3 wow bounceInDown" data-wow-delay=0.5s>
+                    <img src=" https://i.imgur.com/4eFX83o.png"></img>
+                    <div class="overlay">
+                        <h3>Jackie Velasco</h3>
+                        <h4>Founder</h4>
                     </div>
-                    
-
-                <div id="member" class="col-lg-3 col-md-3">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+                <div id="member" class="col-lg-3 col-md-3 wow bounceInDown" data-wow-delay=0.6s>
                     <img src="https://bit.ly/2QEoyBf"></img>
                     <div class="overlay">
-                        <h3>William</h3>
+                        <h3>William Lee</h3>
                         <h4>Co-founder</h4>
                     </div>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
                 </div>
-                <div id="member" class="col-lg-3 col-md-3">
+                <div id="member" class="col-lg-3 col-md-3 wow bounceInDown" data-wow-delay=0.7s>
                     <img src="https://bit.ly/2Qvkz9N"></img>
                     <div class="overlay">
-                        <h3>Jessica</h3>
-                        <h4>The Plain Jane</h4>
+                        <h3>Jessica Orwell</h3>
+                        <h4>Vice President</h4>
                     </div>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
                 </div>
-                <div id="member" class="col-lg-3 col-md-3">
+                <div id="member" class="col-lg-3 col-md-3 wow bounceInDown" data-wow-delay=0.8s>
                     <img src="https://bit.ly/2E1rG30"></img>
                     <div class="overlay">
-                        <h3>Louis</h3>
+                        <h3>Louis Alty</h3>
                         <h4>President</h4>
                     </div>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
 
@@ -201,13 +208,16 @@
             <h2>Partners</h2>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <img src="https://cdn.freebiesupply.com/logos/large/2x/naacp-logo-png-transparent.png" alt="">
+                    <a href="https://www.naacp.org/">
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/naacp-logo-png-transparent.png" alt="NAACP">
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <img src="http://logok.org/wp-content/uploads/2015/01/The-Met-Logo-2016-640x480.png"></img>
+                    <a href="https://www.metmuseum.org/">
+                        <img src="http://logok.org/wp-content/uploads/2015/01/The-Met-Logo-2016-640x480.png" alt="The Metropolitan Museum">
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Smithsonian_logo_color.svg/2000px-Smithsonian_logo_color.svg.png"></img>
+                    <a href="https://www.si.edu/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Smithsonian_logo_color.svg/2000px-Smithsonian_logo_color.svg.png" alt="Smithosian Institution">
                 </div>
             </div>
         </div>
@@ -217,19 +227,35 @@
     <div class="footer footer-dark bg-dark" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-4 col-md-3">
+                    
                     <h4>Resources</h4>
+                    <p>About Us</p>
+                    <p>Our team</p>
+                    <p>News</p>
+                    <p>Impact</p>
+                    <p>Partnerships</p>
                     <p><a href="donate.html">Give a Gift</a></p>
                     <p><a href="contact.html">Contact Us</a></p>
                     <p>Terms and Conditions</p>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    </i>
-                    <p><i class="fa fa-map"></i> Queens Cultural Center <br>Po Box 310</br> Queens, NY, 12430</p>
+
+                <div class="col-lg-4 col-md-3">
+                    <h4>Contact</h4>
+                    <p>Queens Cultural Center</p>
+                    <p>Po Box 310</p>
+                    Queens, NY, 12430</p>
+                    <br>
+                    <h4>Connect</h4>
+                    <p>
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </p>
                     <p><i class="fa fa-envelope"></i> QCC@gmail.com</p>
                     <p><i class="fa fa-phone"></i> (523)-234-2546</p>
                 </div>
-                <div class="boxed col-lg-4 col-md-4"><br>
+                <div class="col-lg-4 col-md-4"><br>
                     <h4>Subscribe Now!</h4>
                     <p>Subscribe to our newsletter to stay updated on exciting events!</p>
                     <input id="FirstName" type="text" class="form-control" placeholder="First Name" aria-label="" area-describedby="basic-addon1"><br>
@@ -256,7 +282,11 @@
         </div>
     </div>
 
-
+    <!--WOW.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!--Bootstrap-->

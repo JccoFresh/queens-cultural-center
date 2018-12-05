@@ -6,7 +6,12 @@ h2 {
   text-align: center !important;
   margin: 1em;
   font-family: "Merriweather Sans", sans-serif;
+
 }
+h3 {
+  text-align: center;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -24,16 +29,17 @@ body {
 }
 
 /*About Us*/
-.about h2{
-background-color: #DF2740;
-color:#fff;
+
+.about h2 {
+  background-color: #DF2740;
+  color: #fff;
 }
+
 .about {
-  margin-bottom: 2em;
   text-align: center;
 }
 
-.about p{
+.about p {
   font-size: 25px;
   font-family: 'Merriweather', serif;
 }
@@ -42,7 +48,7 @@ color:#fff;
 
 #services {
   text-align: center;
-  padding: 10px;
+  padding:10px;
 }
 
 #services a {
@@ -54,13 +60,14 @@ color:#fff;
   height: 200px;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-#serviceHeader{
-  background-color:#23788A;
-  color:#fff;
+#serviceHeader {
+  background-color: #23788A;
+  color: #fff;
 }
+
 /* This container is needed to position the front and back side */
 
 .flip-card-inner {
@@ -97,13 +104,23 @@ color:#fff;
 }
 
 .flip-card-front h2 {
-  color: #fff !important;
+  color: #000;
+  position:relative;
+  top:20%;
 }
+
 /* Style the back side */
 
 .flip-card-back {
   background-color: #fff;
   transform: rotateY(180deg);
+}
+
+.shadow {
+  text-shadow: -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;
 }
 
 
@@ -153,12 +170,12 @@ body,
 
 .slide-content span {
   font-size: 5rem;
-  color: #000;
   font-family: 'Vast Shadow', cursive;
   text-shadow: -2px -1px 0 #fff,
   2px -1px 0 #fff,
   -2px 1px 0 #fff,
   2px 1px 0 #fff;
+  color: #000;
 }
 
 .arrow {
@@ -186,55 +203,70 @@ body,
 }
 
 /*team*/
-#member{
-    width:300px;
-    height:300px;
-    display:inline-block;
-    position:relative;
-    transition:.3s;
+
+#team {
+  text-align: center;
 }
 
-#member img{
-    width:100%;
-    height:100%;
-    transition:.3s;
-    border-radius:4px;
+#member {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  position: relative;
+  transition: .3s;
 }
 
-#member:hover img{
-    filter:blur(2px);
-    box-shadow:0 0 16px cyan;
+#member img {
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+  border-radius: 4px;
 }
 
-.overlay{
-    position:absolute;
-    z-index:1;
-    top:30%;
-    width:100%;
-    text-align:center;
-    color:#CD3413;
-    opacity:0;
-    transition:.3s;
+#member:hover img {
+  filter: blur(2px);
+  box-shadow: 0 0 16px cyan;
 }
 
-#member:hover :not(img){
-    opacity:1;
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: .3s;
 }
 
-.overlay h3{
-    right:10px;
-}
-.overlay h4{
-    top:50px;
-    right:10px;
-}
-#member i{
-  font-size: 20px;
-  margin-right: 100px;
-  color:black;
+#member:hover :not(img) {
+  opacity: 1;
 }
 
+.overlay h3 {
+  right: 10px;
+}
 
+.overlay h4 {
+  top: 50px;
+  right: 10px;
+}
+
+#team i {
+  margin-top:10px;
+  height: 30px;
+  width: 30px;
+  padding:5px;
+  color: #fff;
+  margin-right: 3px;
+  border-radius: 100%;
+  background-color: #a0db8e;
+}
+
+#teamHeader {
+  background-color: #2EAF3E;
+  color: #fff;
+}
 
 /*Footer*/
 
@@ -242,22 +274,17 @@ body,
   color: white;
 }
 
-.footer a{
-  color:#fff;
+.footer a {
+  color: #fff;
 }
+
 .footer {
   color: white;
   text-align: left;
 }
-#footer .boxed {
-  border: 1px solid red;
-}
-
-
 /* Partners */
 
 .partners {
-  background-color: green;
 }
 
 .partners h2 {
@@ -267,22 +294,20 @@ body,
   text-align: center !important;
 }
 
-.partners img{
+.partners img {
   width: 250px;
   height: 250px;
   opacity: 0.6;
   cursor: pointer;
-  margin: 10px ;
+  margin: 10px;
   transition: all 500ms ease-in-out;
 }
 
-.partners {
-  margin-top: 7em;
-  margin-bottom: 7em;
+.partners{
 
 }
 
-.partners img:hover{
+.partners img:hover {
   opacity: 1.0;
 }
 
@@ -308,12 +333,7 @@ strong {
 }
 
 /*Contact Us*/
-.backgroundColour {
-  background: #1D976C;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-}
 .form {
   width: 750px;
   height: 850px;
@@ -328,7 +348,7 @@ strong {
   position: relative
 }
 
- h2 #contactus {
+h2 #contactus {
   margin: 10px 0;
   padding-bottom: 10px;
   width: 180px;
@@ -395,34 +415,42 @@ strong {
 #contactus span {
   margin: 0 5px 0 15px;
 }
+
 /*Lectures*/
-#lectures{
-  text-align:center;
+
+#lectures {
+  text-align: center;
 }
-#lectureItem{
-  border:2px solid;
+
+#lectureItem {
+  border: 2px solid;
   margin-right: 4px;
   margin-bottom: 10px;
 }
+
 /*Modal*/
-#myModal{
-  color:black;
+
+#myModal {
+  color: black;
 }
-#myModal p{
-  color:black;
+
+#myModal p {
+  color: black;
 }
+
 /*Donate*/
-#backgroundimage{
-   height: auto;
-   left: 0;
-   margin: 0;
-   min-height: 100%;
-   min-width: 674px;
-   padding: 0;
-   position: fixed;
-   top: 0;
-   width: 100%;
-   z-index: -1;
+
+#backgroundimage {
+  height: auto;
+  left: 0;
+  margin: 0;
+  min-height: 100%;
+  min-width: 674px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 /*Donate
