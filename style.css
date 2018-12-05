@@ -206,7 +206,7 @@ body,
     box-shadow:0 0 16px cyan;
 }
 
-#member :not(img){
+.overlay{
     position:absolute;
     z-index:1;
     top:30%;
@@ -221,20 +221,19 @@ body,
     opacity:1;
 }
 
-#member h3{
+.overlay h3{
     right:10px;
 }
-#member h4{
+.overlay h4{
     top:50px;
     right:10px;
 }
-
-#member a{
-  opacity: 1 !important;
+#member i{
+  font-size: 20px;
+  margin-right: 100px;
   color:black;
-  font-size: 30px;
-  top:100%;
 }
+
 
 
 /*Footer*/
@@ -286,9 +285,6 @@ body,
 .partners img:hover{
   opacity: 1.0;
 }
-
-
-
 
 
 /*Exhibits*/
