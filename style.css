@@ -50,6 +50,7 @@ color:#fff;
 }
 
 .flip-card {
+  width: 300px;
   height: 200px;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
@@ -87,16 +88,17 @@ color:#fff;
   height: 200px;
   backface-visibility: hidden;
   border: 2px solid;
-  
 }
 
 /* Style the front side (fallback if image is missing) */
 
 .flip-card-front {
-  background-color: #fff;
   color: black;
 }
 
+.flip-card-front h2 {
+  color: #fff !important;
+}
 /* Style the back side */
 
 .flip-card-back {
@@ -227,6 +229,12 @@ body,
     right:10px;
 }
 
+#member a{
+  opacity: 1 !important;
+  color:black;
+  font-size: 30px;
+  top:100%;
+}
 
 
 /*Footer*/
