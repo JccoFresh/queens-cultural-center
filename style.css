@@ -178,6 +178,10 @@ body,
   color: #000;
 }
 
+.slide-content p{
+  font-family:;
+}
+
 .arrow {
   cursor: pointer;
   position: absolute;
