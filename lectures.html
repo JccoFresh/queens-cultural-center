@@ -26,6 +26,10 @@
           </button>
          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="index.html#team" class="nav-link">Our Team</a></li>
+                <li class="nav-item"><a href="index.html#partners" class="nav-link">Partners</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <a href="donate.html" class="nav-link"><button class="btn btn-success">Donate</button></a>
@@ -46,7 +50,7 @@
                     <p>Thursday-12:00PM-1:00PM </p>
                     <p>Friday-12:00PM-1:00PM</p>
                 </div>
-                <div id="lectureItem" class="col-lg-3 col-md-4 wow flipInX" data-wow-delay:2.5s>
+                <div id="lectureItem" class="col-lg-3 col-md-3 wow flipInX" data-wow-delay:2.5s>
                     <h4>Religion</h4>
                     <img src="https://images.cdn4.stockunlimited.net/clipart/monk_1319758.jpg">
                     <hr>
@@ -56,7 +60,7 @@
                     <p>Thursday-11AM-12PM</p>
                     <p>Friday-11AM-12PM</p>
                 </div>
-                <div class="col-lg-3 col-md-4"></div>
+                <div class="col-lg-3 col-md-3"></div>
             </div>
     </div>
     <!--footer-->
@@ -65,13 +69,12 @@
             <div class="row">
                 <div class="col-lg-4 col-md-3">
                     <h4>Resources</h4>
-                    <p>About Us</p>
-                    <p>Our team</p>
-                    <p>News</p>
-                    <p>Partnerships</p>
+                    <p><a href= "#about">About Us</p>
+                    <p><a href= "#teamHeader">Our team</p>
+                    <p><a href= "#serviceHeader">Services</p>
+                    <p><a href= "#partnerHeader">Partnerships</p>
                     <p><a href="donate.html">Give a Gift</a></p>
                     <p><a href="contact.html">Contact Us</a></p>
-                    <p>Terms and Conditions</p>
                 </div>
 
                 <div class="col-lg-4 col-md-3">
@@ -99,7 +102,7 @@
                     <input id="phonenum" type="text" class="form-control" placeholder="Phone Number" aria-label="" area-describedby="basic-addon1"><br>
                     <input id="Email" type="text" class="form-control" placeholder="Email Address" aria-label="" area-describedby="basic-addon1"><br>
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal" onClick="clearText();">Submit</button>
+                        <button class="btn btn-primary" id="alert" type="button" data-toggle="modal" data-target="#myModal" onClick="clearText();">Submit</button>
                     </div>
                     <div class="modal fade" id="myModal">
                         <div class="modal-dialog">
@@ -127,8 +130,13 @@
         new WOW().init();
     </script>
     <script type="text/javascript">
+        document.getElementById("alert").addEventListener("click", function() {
+            alert("Thank you for subscribing!");
+        });
         function clearText() {
             document.getElementById("Email").value = "";
+            document.getElementById("FirstName").value = "";
+            document.getElementById("phonenum").value = "";
         }
     </script>
 </body>
