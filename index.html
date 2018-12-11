@@ -14,13 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <!--External Link-->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!--anchor scroll-->
-    <script>
-        var shiftWindow = function() { scrollBy(0, -50) };
-        window.addEventListener("hashchange", shiftWindow);
-
-        function load() { if (window.location.hash) shiftWindow(); }
-    </script>
     <!--Animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" type="text/css" />
 </head>
@@ -52,8 +45,6 @@
             <div class="slide slide1">
                 <div class="slide-content">
                     <span>Culture</span>
-                    <p>Queens is the second most populous NYC borough,Multiracial individuals are a small but sizable minority group in Queens. 
-                    Over 55,540 multiracial individuals reside in the borough, which is equal to 2.4% of the population.</p>
                 </div>
             </div>
             <div class="slide slide2">
@@ -66,100 +57,93 @@
                     <span>Creativity</span>
                 </div>
             </div>
-            <div class="slide slide4">
-                <div class="slide-content">
-                    <span>Diversity</span>
-                </div>
-            </div>
         </div>
         <div id="arrow-right" class="arrow"></div>
     </div>
 
     <!--About Us-->
     <div class="container" id="about">
-        <div class="about">
-
+        <div id="aboutHeader">
             <h2>About Us</h2>
-            <p>
-                The Queens cultural center was created in order to celebrate and highlight the diversity that exist within Queens, NY. Each month we select one cultural group within Queens and create various exhibits, lecture and activities that celebrate and embody
-                their traditions.
-            </p>
+        </div>
+        <p class="about">
+            The Queens Cultural Center was created in order to celebrate and highlight the diversity that exist within Queens, NY. Each month we select one cultural group within Queens and create various exhibits, lectures, and activities that celebrate and embody
+            their traditions.
+        </p>
+    </div>
+    
+    <!--Services-->
+    <div id="services" class="container">
+        <div id="serviceHeader">
+            <h2>Services</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-1"></div>
+            <div class="col-lg-4 col-md-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="exhibits-front" class="flip-card-front" style="background-image:url(https://bit.ly/2EcDi4p)">
+                            <h2 class="shadow">Exhibits</h2>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Come check out our exhibits showcasing art from local artists and learn about the history of Queens.</p>
+                            <a class="btn btn-success" href="exhibits.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image:url(https://bit.ly/2Rv7ryJ)">
+                            <h2 class="shadow">Lectures</h2>
+                        </div>
+                        <div class="flip-card-back">
+                            
+                            <p>Come and listen to lectures from our hired speakers about a wide range of topics such as politics, religion, etc.</p>
+                            <a href="lectures.html" class="btn btn-success">Learn More</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-1"></div>
+            <div class="col-lg-4 col-md-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image:url(https://bit.ly/2KQr7L1)">
+                            <h2 class="shadow">Tours</h2>
+                        </div>
+                        <div class="flip-card-back" style="">
+                        
+                            <p>Come and tour our facilities with our tour guides as they teach you the history behind QCC.</p>
+                            <a class="btn btn-success">Learn More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image:url(https://bit.ly/2E2hXKb)">
+                            <h2 class="shadow">Educational Programs</h2>
+                        </div>
+                        <div class="flip-card-back">
+                        
+                            <p>Come bring you children to our educational workshops that teach them the vast cultures of Queens</p>
+                            <a class="btn btn-success">Learn More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1"></div>
         </div>
     </div>
-    <!--Services-->
-
-    <div class="services" id="services">
-        <div class="container">
-            <h2 id="serviceHeader">Services</h2>
-            <div class="row">
-                <div class="col-lg-2 col-md-1"></div>
-                <div class="col-lg-4 col-md-5">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div id="exhibits-front" class="flip-card-front" style="background-image:url(https://bit.ly/2EcDi4p)">
-                                <h2 class="shadow">Exhibits</h2>
-                            </div>
-                            <div class="flip-card-back">
-                                <hr>
-                                <p>Come check out our exhibits showcasing art from local artists and learn about the history of Queens.</p>
-                                <a class="btn btn-success" href="exhibits.html">Learn More</a>
-                                <hr>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-5">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-image:url(https://bit.ly/2Rv7ryJ)">
-                                <h2 class="shadow">Lectures</h2>
-                            </div>
-                            <div class="flip-card-back">
-                                <hr>
-                                <p>Come and listen to lectures from our hired speakers about a wide range of topics such as politics, religion, etc.</p>
-                                <a href="lectures.html" class="btn btn-success">Learn More</a>
-                                <hr>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-2 col-md-1"></div>
-                <div class="col-lg-4 col-md-5">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-image:url(https://bit.ly/2KQr7L1)">
-                                <h2 class="shadow">Tours</h2>
-                            </div>
-                            <div class="flip-card-back">
-                                <hr>
-                                <p>Come and tour our facilities with our tour guides as they teach you the history behind QCC.</p>
-                                <a href="tours.html" class="btn btn-success">Learn More</a>
-                                <hr>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-5">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-image:url(https://bit.ly/2E2hXKb)">
-                                <h2 class="shadow">Educational Programs</h2>
-                            </div>
-                            <div class="flip-card-back">
-                                <hr>
-                                <p>Come bring you children to our educational workshops that teach them the vast cultures of Queens</p>
-                                <a class="btn btn-success">Learn More</a>
-                                <hr>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-1"></div>
-            </div>
-        </div>
     </div>
 
     <!--Meet Our Team-->
@@ -169,79 +153,79 @@
                 <h2>Meet Our Team</h2>
             </div>
             <div class="row">
-                <div id="member" class="col-lg-3 col-md-3 wow bounceInDown" data-wow-delay=0.5s>
-                    <img src=" https://i.imgur.com/4eFX83o.png"></img>
+                <div id="member" class="col-lg-3 col-md-3 wow bounceIn" data-wow-delay=0.4s>
+                    <img src="https://i.postimg.cc/HLNfGnJ6/Josie-Flight-2-300x300.jpg">
                     <div class="overlay">
-                        <h3>Jackie Velasco</h3>
+                        <h3>Kristine Rea</h3>
                         <h4>Founder</h4>
                     </div>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
-                <div id="member" class="col-lg-3 col-md-3 wow bounceInDown" data-wow-delay=0.6s>
-                    <img src="https://bit.ly/2QEoyBf"></img>
+                <div id="member" class="col-lg-3 col-md-3 wow bounceIn" data-wow-delay=0.5s>
+                    <img src="https://bit.ly/2QEoyBf">
                     <div class="overlay">
                         <h3>William Lee</h3>
                         <h4>Co-founder</h4>
                     </div>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
-                <div id="member" class="col-lg-3 col-md-3 wow bounceInDown" data-wow-delay=0.7s>
-                    <img src="https://bit.ly/2Qvkz9N"></img>
+                <div id="member" class="col-lg-3 col-md-3 wow bounceIn" data-wow-delay=0.6s>
+                    <img src="http://fpcj.jp/wp/wp-content/uploads/2017/10/harunoyohida_4958-light-1.jpg">
                     <div class="overlay">
-                        <h3>Jessica Orwell</h3>
-                        <h4>Vice President</h4>
-                    </div>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                </div>
-                <div id="member" class="col-lg-3 col-md-3 wow bounceInDown" data-wow-delay=0.8s>
-                    <img src="https://bit.ly/2E1rG30"></img>
-                    <div class="overlay">
-                        <h3>Louis Alty</h3>
+                        <h3>Jessica Santos</h3>
                         <h4>President</h4>
                     </div>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div id="member" class="col-lg-3 col-md-3 wow bounceIn" data-wow-delay=0.7s>
+                    <img src="https://www.rashidahdevore.com/uploads/9/0/0/6/90067921/ssp-65591-ac-web.jpg">
+                    <div class="overlay">
+                        <h3>Saketh Chandra</h3>
+                        <h4>Vice President</h4>
+                    </div>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
 
         </div>
     </div>
     <!--Partners-->
-    <div class="partners" id="partners">
-        <div class="container">
-            <h2>Partners</h2>
+    <div class="container" id="partners">
+            <div id="partnerHeader">
+                <h2>Partners</h2>
+            </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <a href="https://www.naacp.org/">
-                        <img src="https://cdn.freebiesupply.com/logos/large/2x/naacp-logo-png-transparent.png" alt="NAACP">
+                    <a href="https://www.naacp.org/" target="_blank">
+                        <img src="https://i.postimg.cc/2S12z9bc/NAACP-logo-18-C0428-FD3-seeklogo-com.png" alt="NAACP">
+                    </a>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <a href="https://www.metmuseum.org/">
-                        <img src="http://logok.org/wp-content/uploads/2015/01/The-Met-Logo-2016-640x480.png" alt="The Metropolitan Museum">
+                    <a href="https://www.metmuseum.org/" target="_blank">
+                    <img src="https://static.dezeen.com/uploads/2016/02/metropolitan-art-museum-logo_dezeen_936_0.jpg" alt="MET Musuem">
+                    </a>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <a href="https://www.si.edu/">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Smithsonian_logo_color.svg/2000px-Smithsonian_logo_color.svg.png" alt="Smithosian Institution">
+                    <a href="https://www.si.edu/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Smithsonian_logo_color.svg/2000px-Smithsonian_logo_color.svg.png" alt="Smithsonian Institution">
+                    </a>
                 </div>
             </div>
-        </div>
     </div>
-
     <!--Footer-->
     <div class="footer footer-dark bg-dark" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-3">
-                    
                     <h4>Resources</h4>
-                    <p>About Us</p>
-                    <p>Our team</p>
-                    <p>News</p>
-                    <p>Impact</p>
-                    <p>Partnerships</p>
+                    <p><a href= "#about">About Us</p>
+                    <p><a href= "#teamHeader">Our team</p>
+                    <p><a href= "#serviceHeader">Services</p>
+                    <p><a href= "#partnerHeader">Partnerships</p>
                     <p><a href="donate.html">Give a Gift</a></p>
                     <p><a href="contact.html">Contact Us</a></p>
                     <p>Terms and Conditions</p>
@@ -249,10 +233,12 @@
 
                 <div class="col-lg-4 col-md-3">
                     <h4>Contact</h4>
-                    <p>Queens Cultural Center</p>
-                    <p>Po Box 310</p>
-                    Queens, NY, 12430</p>
-                    <br>
+                    <p>
+                        Queens Cultural Center
+                        <br> Po Box 310</br>
+                        Queens, NY, 12430
+                    </p>
+                    
                     <h4>Connect</h4>
                     <p>
                         <i class="fab fa-facebook-f fa-2x"></i>
@@ -262,7 +248,7 @@
                     <p><i class="fa fa-envelope"></i> QCC@gmail.com</p>
                     <p><i class="fa fa-phone"></i> (523)-234-2546</p>
                 </div>
-                <div class="col-lg-4 col-md-4"><br>
+                <div class="col-lg-4 col-md-4">
                     <h4>Subscribe Now!</h4>
                     <p>Subscribe to our newsletter to stay updated on exciting events!</p>
                     <input id="FirstName" type="text" class="form-control" placeholder="First Name" aria-label="" area-describedby="basic-addon1"><br>
@@ -307,6 +293,11 @@
             document.getElementById("FirstName").value = "";
             document.getElementById("phonenum").value = "";
         }
+        //anchor scroll
+        var shiftWindow = function() { scrollBy(0, -50) };
+        window.addEventListener("hashchange", shiftWindow);
+
+        function load() { if (window.location.hash) shiftWindow(); }
     </script>
 </body>
 

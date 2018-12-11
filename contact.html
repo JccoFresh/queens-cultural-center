@@ -36,8 +36,8 @@
         <form class="form">
             <h2>CONTACT US</h2>
             <strong><h3>We'd love to hear from you.</h3></strong>
-            <p>
-                Reach out for any inquiries. If you are interested in volunteering with us, please leave your full name and email address
+            <p style="text-align: center;">
+                Reach out for any inquiries. If you are interested in volunteering with us, please leave your full name and email address.
             </p>
             <p type="Name:"><input placeholder="Your name here.."></input>
             </p>
@@ -50,7 +50,7 @@
     </form>
     <script type="text/javascript" src="javascript.js"></script>
     
-<!--Footer-->
+    <!--Footer-->
     <div class="footer footer-dark bg-dark" id="footer">
         <div class="container">
             <div class="row">
@@ -59,7 +59,6 @@
                     <p>About Us</p>
                     <p>Our team</p>
                     <p>News</p>
-                    <p>Impact</p>
                     <p>Partnerships</p>
                     <p><a href="donate.html">Give a Gift</a></p>
                     <p><a href="contact.html">Contact Us</a></p>
@@ -68,13 +67,12 @@
 
                 <div class="col-lg-4 col-md-3">
                     <h4>Contact</h4>
-                    <i class="fa fa-map"></i>
                     <p>
                         Queens Cultural Center
                         <br> Po Box 310</br>
                         Queens, NY, 12430
                     </p>
-                    <br>
+                    
                     <h4>Connect</h4>
                     <p>
                         <i class="fab fa-facebook-f fa-2x"></i>
@@ -84,7 +82,7 @@
                     <p><i class="fa fa-envelope"></i> QCC@gmail.com</p>
                     <p><i class="fa fa-phone"></i> (523)-234-2546</p>
                 </div>
-                <div class="col-lg-4 col-md-4"><br>
+                <div class="col-lg-4 col-md-4">
                     <h4>Subscribe Now!</h4>
                     <p>Subscribe to our newsletter to stay updated on exciting events!</p>
                     <input id="FirstName" type="text" class="form-control" placeholder="First Name" aria-label="" area-describedby="basic-addon1"><br>
@@ -110,7 +108,14 @@
             </div>
         </div>
     </div>
-
+    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript">
+        function clearText() {
+            document.getElementById("Email").value = "";
+            document.getElementById("FirstName").value = "";
+            document.getElementById("phonenum").value = "";
+        }
+        </script>
 </body>
 
 </html>

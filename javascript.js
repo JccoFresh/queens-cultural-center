@@ -47,9 +47,3 @@ arrowRight.addEventListener("click", function() {
 });
 
 startSlide();
-
-//const message = document.getElementById("message");
-
-//message.addEventListener("click", function(){
-//  message.href = "index.html";
-//});

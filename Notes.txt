@@ -2,42 +2,48 @@ Type: 1 Scroll hybrid
 Navigation: Directs (scrolls?) your screen to the specific part of the site that the button says
 Font:
 
-
-
 Main page content:
 Carousel that you manual click to see new slide, has representationn of how many images there
 About us-text about company
 Services-Hovers over it then flips to show more content like a brief blurb. This will include all services.
 
-
-
-
 Donation page: Button is different, its appearance sticks out from the others and sends to a new page
-https://www.tripsavvy.com/thmb/2Vu-qzpKFA5lOaHjBkcj-Ft8VZo=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-543161531-599e915d6f53ba00103ae5b0.jpg 
-
-width: 340px;
-  height: 440px;
-  background: #e6e6e6;
-  border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
-  margin: calc(50vh - 220px) auto;
-  padding: 20px 30px;
-  max-width: calc(100vw - 40px);
-  box-sizing: border-box;
-  font-family: 'Merriweather Sans',
-  sans-serif;
-  position: relative
-  {
-    font-family: 'proximanovasoft-semibold';
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 https://www.qchnyc.org/advocacy
 
-Presnsentation:
 
-how did we as a team decide some features in addition to what the client wanted
-more of why and not what is not there
-why did you design it the way you did
+-partners need fixing on the spacing
+-animations
+-change the met logo
+-center the title on the partners
+
+
+
+Presentation:
+
+-how did we as a team decide some features in addition to what the client wanted
+-more of why and not what is there
+-why did you design it the way you did eg: colors, animations, and and personal creative choices
+-to save time you dont need to read out the text on the website
+
+
+--------------Script-------------------
+
+                                                  Feedback
+                                                
+
+Make sure the partners’ logos are centered within the container
+
+All links under Resources should work
+
+All buttons and icons should work
+
+Make sure there is padding and elements are not pushed up against the border of the container they are nested within
+
+The Lectures and Contact page doesn’t have a full navbar?
+
+Align the boxes under Lectures
+
+Make sure all photos are not stretched
+
+

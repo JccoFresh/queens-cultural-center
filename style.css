@@ -8,6 +8,7 @@ h2 {
   font-family: "Merriweather Sans", sans-serif;
 
 }
+
 h3 {
   text-align: center;
 }
@@ -24,31 +25,33 @@ body {
   padding-top: -70px;
 }
 
+.navbar a{
+  color:#fff !important;
+}
 .container {
   padding: 1%;
 }
 
 /*About Us*/
 
-.about h2 {
-  background-color: #DF2740;
+#aboutHeader {
+  background-color: #b30000;
   color: #fff;
 }
 
 .about {
-  text-align: center;
-}
-
-.about p {
+  margin-top: 3em;
   font-size: 25px;
   font-family: 'Merriweather', serif;
+  text-align: center;
 }
 
 /*Services*/
 
 #services {
   text-align: center;
-  padding:10px;
+  padding: 10px;
+  margin-bottom: -0.4em;
 }
 
 #services a {
@@ -64,7 +67,7 @@ body {
 }
 
 #serviceHeader {
-  background-color: #23788A;
+  background-color: #4B0082;
   color: #fff;
 }
 
@@ -103,10 +106,9 @@ body {
   color: black;
 }
 
-.flip-card-front h2 {
-  color: #000;
-  position:relative;
-  top:20%;
+#services h2 {
+  position: relative;
+  top: 20%;
 }
 
 /* Style the back side */
@@ -114,13 +116,17 @@ body {
 .flip-card-back {
   background-color: #fff;
   transform: rotateY(180deg);
+  padding-left:20px;
+  padding-right: 20px;
+  padding-top:10px;
 }
 
 .shadow {
-  text-shadow: -1px -1px 0 #fff,
-  1px -1px 0 #fff,
-  -1px 1px 0 #fff,
-  1px 1px 0 #fff;
+  text-shadow: -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000;
+  color: #fff;
 }
 
 
@@ -171,15 +177,18 @@ body,
 .slide-content span {
   font-size: 5rem;
   font-family: 'Vast Shadow', cursive;
-  text-shadow: -2px -1px 0 #fff,
-  2px -1px 0 #fff,
-  -2px 1px 0 #fff,
-  2px 1px 0 #fff;
-  color: #000;
+  text-shadow: -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000;
+  color: #fff;
+  margin-top: 1em;
 }
 
-.slide-content p{
-  font-family:;
+.slide-content p {
+  font-family: "Merriweather", serif;
+  font-size: 3rem;
+  color: #fff;
 }
 
 .arrow {
@@ -210,12 +219,12 @@ body,
 
 #team {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #member {
   width: 300px;
   height: 300px;
-  display: inline-block;
   position: relative;
   transition: .3s;
 }
@@ -238,7 +247,12 @@ body,
   top: 30%;
   width: 100%;
   text-align: center;
-  color: white;
+  text-shadow: 
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  color: #fff;
   opacity: 0;
   transition: .3s;
 }
@@ -247,20 +261,13 @@ body,
   opacity: 1;
 }
 
-.overlay h3 {
-  right: 10px;
-}
-
-.overlay h4 {
-  top: 50px;
-  right: 10px;
-}
+/*Meet our team*/
 
 #team i {
-  margin-top:10px;
+  margin-top: 10px;
   height: 30px;
   width: 30px;
-  padding:5px;
+  padding: 5px;
   color: #fff;
   margin-right: 3px;
   border-radius: 100%;
@@ -268,7 +275,7 @@ body,
 }
 
 #teamHeader {
-  background-color: #2EAF3E;
+  background-color: #00cc00;
   color: #fff;
 }
 
@@ -286,33 +293,30 @@ body,
   color: white;
   text-align: left;
 }
+
 /* Partners */
-
-.partners {
+#partners {
+  margin-bottom: 2em;
 }
-
-.partners h2 {
+#partnerHeader {
   font-family: 'Merriweather Sans', cursive;
   color: #fff;
   background-color: #914a2b;
   text-align: center !important;
 }
 
-.partners img {
+#partners img {
   width: 250px;
   height: 250px;
   opacity: 0.6;
   cursor: pointer;
   margin: 10px;
   transition: all 500ms ease-in-out;
+  margin-left:50px;
 }
 
-.partners{
-
-}
-
-.partners img:hover {
-  opacity: 1.0;
+#partners img:hover{
+  opacity:1;
 }
 
 
@@ -340,7 +344,7 @@ strong {
 
 .form {
   width: 750px;
-  height: 850px;
+  height: 700px;
   background: #e6e6e6;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
@@ -455,6 +459,17 @@ h2 #contactus {
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+#containbox ul{
+  list-style-type: none;
+}
+
+#containbox li{
+  color:black;
+}
+#containbox form{
+  height:850px;
 }
 
 /*Donate
