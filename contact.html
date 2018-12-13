@@ -43,13 +43,31 @@
             <p style="text-align: center;">
                 Reach out for any inquiries. If you are interested in volunteering with us, please leave your full name and email address.
             </p>
-            <p type="Name:"><input placeholder="Your name here.."></input>
+            <p type="Name:"><input id="Email" placeholder="Your name here.."></input>
             </p>
-            <p type="Email:"><input placeholder="How an we contact you back? "></input>
+            <p type="Email:"><input id="FirstName" placeholder="How an we contact you back? "></input>
             </p>
-            <p type="Message:"><input placeholder="Whats on your mind?"></input>
+            <p type="Message:"><input id="phonenum" placeholder="Whats on your mind?"></input>
             </p>
-            <a class="message" href="index.html">Send Message</a>
+            <button class="message" type="button" data-toggle="modal" data-target="#myModal" onClick="clearText();">Send Message</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Notification</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for your message! We will get back to you as soon as possible!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </div>
     </form>
     <script type="text/javascript" src="javascript.js"></script>
@@ -61,7 +79,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-3">
                     <h4>Resources</h4>
-                    <p><a href= "#about">About Us</p>
+                    <p><a href="#about">About Us</p>
                     <p><a href= "#teamHeader">Our team</p>
                     <p><a href= "#serviceHeader">Services</p>
                     <p><a href= "#partnerHeader">Partnerships</p>
@@ -77,9 +95,9 @@
                     </p>
                     <h4>Connect</h4>
                     <p>
-                        <i class="fab fa-facebook-f fa-2x"></i>
-                        <i class="fab fa-twitter fa-2x"></i>
-                        <i class="fab fa-linkedin fa-2x"></i>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
                     </p>
                     <p><i class="fa fa-envelope"></i> QCC@gmail.com</p>
                     <p><i class="fa fa-phone"></i> (523)-234-2546</p>
@@ -91,13 +109,13 @@
                     <input id="phonenum" type="text" class="form-control" placeholder="Phone Number" aria-label="" area-describedby="basic-addon1"><br>
                     <input id="Email" type="text" class="form-control" placeholder="Email Address" aria-label="" area-describedby="basic-addon1"><br>
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button" id="alert" data-toggle="modal" data-target="#myModal" onClick="clearText();">Submit</button>
+                        <button class="btn btn-primary" type="button" id="alert" data-toggle="modal" data-target="#myModal-1" onClick="clearText();">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="myModal">
+    <div class="modal fade" id="myModal-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -110,11 +128,16 @@
             </div>
         </div>
     </div>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--Javascript-->
+    <script type="text/javascript" src="javascript.js"></script>
     <script>
-        document.getElementById("alert").addEventListener("click", function() {
-            alert("Thank you for subscribing!");
-        });
-
         function clearText() {
             document.getElementById("Email").value = "";
             document.getElementById("FirstName").value = "";

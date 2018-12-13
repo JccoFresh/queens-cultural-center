@@ -13,6 +13,13 @@ h3 {
   text-align: center;
 }
 
+.align {
+  margin: -20px -50px;
+  position: relative;
+  left: 50%;
+  top:3em;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -25,9 +32,10 @@ body {
   padding-top: -70px;
 }
 
-.navbar a{
-  color:#fff !important;
+.navbar a {
+  color: #fff !important;
 }
+
 .container {
   padding: 1%;
 }
@@ -40,7 +48,7 @@ body {
 }
 
 .about {
-  margin-top: 3em;
+  margin-top: 2.6em;
   font-size: 25px;
   font-family: 'Merriweather', serif;
   text-align: center;
@@ -80,7 +88,6 @@ body {
   text-align: center;
   transition: transform 1s;
   transform-style: preserve-3d;
-
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -116,9 +123,9 @@ body {
 .flip-card-back {
   background-color: #fff;
   transform: rotateY(180deg);
-  padding-left:20px;
+  padding-left: 20px;
   padding-right: 20px;
-  padding-top:20px;
+  padding-top: 20px;
 }
 
 .shadow {
@@ -217,6 +224,10 @@ body,
 
 /*team*/
 
+.format {
+  margin-top: 2.5em;
+}
+
 #team {
   text-align: center;
   margin-bottom: 20px;
@@ -247,21 +258,19 @@ body,
   top: 30%;
   width: 100%;
   text-align: center;
-  text-shadow: 
-  -1px -1px 0 #000,
+  text-shadow: -1px -1px 0 #000,
   1px -1px 0 #000,
   -1px 1px 0 #000,
   1px 1px 0 #000;
   color: #fff;
   opacity: 0;
   transition: .3s;
+  right: 3px;
 }
 
 #member:hover :not(img) {
   opacity: 1;
 }
-
-/*Meet our team*/
 
 #team i {
   margin-top: 10px;
@@ -295,9 +304,11 @@ body,
 }
 
 /* Partners */
+
 #partners {
   margin-bottom: 2em;
 }
+
 #partnerHeader {
   font-family: 'Merriweather Sans', cursive;
   color: #fff;
@@ -312,11 +323,11 @@ body,
   cursor: pointer;
   margin: 10px;
   transition: all 500ms ease-in-out;
-  margin-left:50px;
+  margin-left: 50px;
 }
 
-#partners img:hover{
-  opacity:1;
+#partners img:hover {
+  opacity: 1;
 }
 
 
@@ -461,15 +472,16 @@ h2 #contactus {
   z-index: -1;
 }
 
-#containbox ul{
+#containbox ul {
   list-style-type: none;
 }
 
-#containbox li{
-  color:black;
+#containbox li {
+  color: black;
 }
-#containbox form{
-  height:850px;
+
+#containbox form {
+  height: 850px;
 }
 
 /*Donate

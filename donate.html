@@ -30,7 +30,9 @@
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 
             </ul>
-            <a href="donate.html" class="nav-link"><button class="btn btn-success">Donate</button></a>
+            <div>
+             <a href="donate.html" class="nav-link"><button class="btn btn-success">Donate</button></a>
+            </div>
         </div>
     </nav>
     
@@ -39,7 +41,7 @@
         <img id="backgroundimage" src="https://www.lynnwoodtourism.com/wp-content/uploads/2018/01/Fair-on-44th.jpg" border="0" alt="">
         <form class="form">
             <h2>GIVE A GIFT!</h2>
-            <h2> <strong> To support monthly cultural exibits, community events, afterschool youth programs, educational classes for adults, and much more, make a donation today!</strong></h2>
+            <h2> <strong> To support monthly cultural exhibits, community events, afterschool youth programs, educational classes for adults, and much more, make a donation today!</strong></h2>
             <hr>
             <input type="text" class="form-control" placeholder="Full Name" aria-label="" aria-describeby="basic-addon1">
             <input type="text" class="form-control" placeholder="Email Address" aria-label="" aria-describeby="basic-addon1">
@@ -53,17 +55,32 @@
                     <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$100</button>
                 </div>
             </div>
+            <br>
             <div class="row justify-content-center">
                 <div class="row-lg-12 row-md-6">
                     <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$250</button>
                     <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$500</button>
                     <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$1000</button>
-                     <button class="btn btn-outline-primary btn-lg" aria-pressed="true">Other</button>
+                    <button class="btn btn-outline-primary btn-lg" aria-pressed="true">Other</button>
                 </div>
             </div>
-            <p>
-                <a href="https://www.paypal.com/us/home" target="_blank" class="btn btn-primary">Proceed To Donate</a>
-            </p>
+            
+                <div class="input-group-append">
+                        <button class="align btn btn-primary" type="button" data-toggle="modal" data-target="#myModal" onClick="clearText();">Donate</button>
+                    </div>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Notification</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Thank you for your generous donation!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </form>
     </div>
     
@@ -73,13 +90,12 @@
             <div class="row">
                 <div class="col-lg-4 col-md-3">
                     <h4>Resources</h4>
-                    <p><a href="index.html#about">About Us</a></p>
-                    <p><a href="index.html#teamHeader">Our team</p>
-                    <p><a href="index.html#serviceHeader">Services</p>
-                    <p><a href="index.html#partnerHeader">Partnerships</p>
+                    <p><a href= "#about">About Us</p>
+                    <p><a href= "#teamHeader">Our team</p>
+                    <p><a href= "#serviceHeader">Services</p>
+                    <p><a href= "#partnerHeader">Partnerships</p>
                     <p><a href="donate.html">Give a Gift</a></p>
                     <p><a href="contact.html">Contact Us</a></p>
-                    <p>Terms and Conditions</p>
                 </div>
                 <div class="col-lg-4 col-md-3">
                     <h4>Contact</h4>
@@ -90,9 +106,9 @@
                     </p>
                     <h4>Connect</h4>
                     <p>
-                        <i class="fab fa-facebook-f fa-2x"></i>
-                        <i class="fab fa-twitter fa-2x"></i>
-                        <i class="fab fa-linkedin fa-2x"></i>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
                     </p>
                     <p><i class="fa fa-envelope"></i> QCC@gmail.com</p>
                     <p><i class="fa fa-phone"></i> (523)-234-2546</p>
@@ -123,19 +139,21 @@
             </div>
         </div>
     </div>
-
-    
-  <script type="text/javascript" src="javascript.js"></script>
-  <script>
-      document.getElementById("alert").addEventListener("click", function() {
-            alert("Thank you for subscribing!");
-        });
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--Javascript-->
+    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript">
         function clearText() {
             document.getElementById("Email").value = "";
             document.getElementById("FirstName").value = "";
             document.getElementById("phonenum").value = "";
         }
-  </script>
-
+    </script>
 </body>
 </html>

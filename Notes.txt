@@ -34,7 +34,7 @@ Presentation:
 
 Make sure the partners’ logos are centered within the container
 
-All links under Resources should work
+*All links under Resources should work
 
 All buttons and icons should work
 
