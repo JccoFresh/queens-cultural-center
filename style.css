@@ -449,11 +449,11 @@ h2 #contactus {
 
 /*Modal*/
 
-#myModal {
+.modal {
   color: black;
 }
 
-#myModal p {
+.modal p {
   color: black;
 }
 
@@ -481,7 +481,14 @@ h2 #contactus {
 }
 
 #containbox form {
-  height: 850px;
+  height: 830px;
+}
+#credit {
+  width: 50%;
+  margin: auto 0;
+  margin-left: 25%;
+  margin-top: 20px;
+  margin-bottom: -2em;
 }
 
 /*Donate
